@@ -1,0 +1,78 @@
+// navbar
+.navbar {
+  background-color: $black;
+  .menu-list a {
+    color: $white;
+    text-transform: capitalize;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  & a:hover {
+    background-color: $green;
+  }
+}
+
+// hero section
+.books {
+  img {
+    height: 60vh;
+  }
+  .book-content {
+    h1 {
+      font-weight: 600;
+      font-size: 3rem;
+      color: $black;
+      text-transform: capitalize;
+    }
+    h2 {
+      font-size: 2.4rem;
+    }
+    article {
+      outline: 10px solid rgba($text, 0.1);
+      margin: 3rem 0;
+      padding: 2rem;
+      h3 {
+        font-size: 1.8rem;
+      }
+    }
+    article:hover {
+      animation: booksanimated 2s linear;
+      outline: 5px solid $black;
+
+      a,
+      i {
+        background-color: $green;
+        color: $white;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+@keyframes booksanimated {
+  0% {
+    background-color: skyblue;
+  }
+  25% {
+    background-color: skyblue;
+  }
+  50% {
+    background-color: skyblue;
+  }
+  100% {
+    background-color: skyblue;
+  }
+}
+// footer
+footer {
+  background-color: $black;
+  color: $white;
+  padding: 1rem;
+  text-align: center;
+}
+footer:hover {
+  background-color: $green;
+  color: $white;
+}
